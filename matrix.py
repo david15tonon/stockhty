@@ -12,6 +12,10 @@ while(i<len(m)):
     
 # ----------------------------------------------------------#
 print('\n* Inserting new element to each columns:\n')
+
+for i in range(0,len(m)):
+    m[i] = insert(m[i],[5],m[i][1]+m[i][3])
+    print(m[i])
 m_c = insert(m,[5],[[1],[2],[3],[4],[5],[6],[7]],1)
  
 print(m_c)
